@@ -1,0 +1,61 @@
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+body{
+    background-color: hsl(185, 41%, 84%);
+}
+.main-content{
+    max-width: 924px;
+    max-height: 485px;
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 36px;
+    display: flex;
+}
+.main-content-parameter-selector{
+    width: 414px;
+    height: 419px;
+    margin: 27px;
+}
+.main-content-display-total{
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 20px;
+    width: 414px;
+    height: 419px;
+    margin: 27px;
+}
+.content-display-total{
+    width: 364px;
+    height: 364px;
+    margin: 28px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.box-label{
+    width: 110px;
+}
+.text-Title{
+    margin-bottom: 0px;
+    color: hsl(0, 0%, 100%);
+    size: 15px;
+}
+.text-Subtitle{
+    color: hsl(186, 14%, 43%);
+    size: 10px;
+    margin-top: 0px;
+}
+.box-tipAmount-price{
+    display: flex;
+    margin-bottom: 15px;
+}
+.box-price{
+    margin-left: 98px;
+    color: hsl(172, 67%, 45%);
+    font-size: 45px;
+}
