@@ -22,6 +22,7 @@ body{
     width: 414px;
     height: 419px;
     margin: 27px;
+    border: solid black;
 }
 .main-content-display-total{
     background-color: hsl(183, 100%, 15%);
@@ -58,4 +59,11 @@ body{
     margin-left: 98px;
     color: hsl(172, 67%, 45%);
     font-size: 45px;
+}
+.button-reset{
+    text-align: center;
+    background-color: #0d686d;
+    width: 319px;
+    height: 52px;
+    margin-top: 86px;
 }
