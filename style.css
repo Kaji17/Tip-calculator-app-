@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Space+Mono:wght@700&display=swap');
+
 .attribution {
     font-size: 11px; text-align: center;
 }
@@ -6,6 +8,7 @@
 }
 body{
     background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
 }
 .main-content{
     max-width: 924px;
@@ -17,12 +20,12 @@ body{
     transform: translate(-50%, -50%);
     border-radius: 36px;
     display: flex;
+    padding-right: 22px;
 }
 .main-content-parameter-selector{
     width: 414px;
     height: 419px;
     margin: 27px;
-    border: solid black;
 }
 .main-content-display-total{
     background-color: hsl(183, 100%, 15%);
@@ -56,9 +59,9 @@ body{
     margin-bottom: 15px;
 }
 .box-price{
-    margin-left: 98px;
+    margin-left: 70px;
     color: hsl(172, 67%, 45%);
-    font-size: 45px;
+    font-size: 47px;
 }
 .button-reset{
     text-align: center;
@@ -66,4 +69,42 @@ body{
     width: 319px;
     height: 52px;
     margin-top: 86px;
+}
+.bill-input{
+    text-align: right;
+    font-family: 'Space Mono', monospace;
+    color: hsl(183, 100%, 15%);
+    font-size: 24px;
+    width: 360px;
+    background-color: hsl(189, 41%, 97%);
+    border-width: 0px;
+    font-weight: 700;
+}
+form{
+    margin: 23px;
+}
+.lab-group{
+    margin-bottom: 12px;
+}
+.symboledollard{
+    position: absolute;
+    top: 85px;
+    left: 68px;
+    font-size: 24px;
+    font-family: 'Space Mono', monospace ;
+    color: #9eb2b3;
+}
+.display-spliter{
+    position: absolute;
+    font-size: 35px;
+    top: -23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 89px;
+    max-height: 57px;
+}
+.p-{
+    margin: 0px;
+    font-family: 'Space Mono', monospace ;
+    color: hsl(186, 14%, 43%);
 }
