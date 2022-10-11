@@ -22,18 +22,41 @@
 
     <!-- Left box in Main content form of parameter -->
     <div class="main-content-parameter-selector">
-      <form action="index.html" method="post">
+      <form action="index.html" method="post" class="form">
         
         <div class="input-container">
           
-          <div class="lab-group"><label for="bill-input" class="lab-group1">Bill</label></div>
+          <div class="lab-group"><label for="bill-input">Bill</label></div>
           
           <div class="input-group">
             <input type="text" id="bill-input" placeholder="0" class="bill-input">
           </div>
 
-          <div class="symboledollard">$</div>
+          <div class="symboledollard"><img src="images/icon-dollar.svg" alt="$"></div>
 
+        </div>
+
+        <div class="button-container">
+          <div class="lab-group1">Select Tip %</div>
+            <div class="group-button">
+              <input type="button" value="5%" class="button-green" >
+              <input type="button" value="10%" class="button-green" >
+              <input type="button" value="15%" class="button-green" >
+              <input type="button" value="25%" class="button-green" >
+              <input type="button" value="50%" class="button-green">
+              <input type="text" placeholder="Custom" class="button-custom">
+            </div>
+        </div>
+
+        <div class="input-container">
+          
+          <div class="lab-group"><label for="numberofpeople-input">Number of People</label></div>
+          
+          <div class="input-group">
+            <input type="text" id="numberofpeople-input" placeholder="0" class="bill-input">
+          </div>
+
+          <div class="symbolepeople"><img src="images/icon-person.svg" alt="$"></div>
         </div>
 
       </form>
@@ -87,7 +110,7 @@
   Bill
 
   Select Tip %
-  5%
+  
   10%
   15%
   25%
