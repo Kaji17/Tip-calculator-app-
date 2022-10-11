@@ -75,16 +75,23 @@ body{
     font-family: 'Space Mono', monospace;
     color: hsl(183, 100%, 15%);
     font-size: 24px;
-    width: 360px;
+    min-width: 375px;
     background-color: hsl(189, 41%, 97%);
     border-width: 0px;
     font-weight: 700;
 }
 form{
-    margin: 23px;
+    margin-left: 23px;
+    margin-top: 23px;
+    margin-bottom: 23px;
 }
 .lab-group{
     margin-bottom: 12px;
+    color: hsl(186, 14%, 43%);
+}
+.lab-group1{
+    margin-bottom: 24px;
+    color: hsl(186, 14%, 43%);
 }
 .symboledollard{
     position: absolute;
@@ -97,7 +104,7 @@ form{
 .display-spliter{
     position: absolute;
     font-size: 35px;
-    top: -23%;
+    top: -34%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 89px;
@@ -107,4 +114,119 @@ form{
     margin: 0px;
     font-family: 'Space Mono', monospace ;
     color: hsl(186, 14%, 43%);
+}
+.button-container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.button-green{
+    min-width: 118px;
+    min-height: 49px;
+    margin-bottom: 17px;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    color: hsl(0, 0%, 100%);
+    font-size: 24px;
+    background-color: hsl(183, 100%, 15%);
+    border-width: 0px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.group-button :hover{
+    background-color: hsl(183, 69%, 27%);
+}
+.button-custom{
+    max-width: 111px;
+    min-height: 49px;
+    margin-bottom: 17px;
+    text-align: right;
+    font-family: 'Space Mono', monospace;
+    color: hsl(183, 100%, 15%);
+    font-size: 24px;
+    background-color: hsl(189, 41%, 97%);
+    border-width: 0px;
+    font-weight: 700;
+}
+.symbolepeople{
+    position: absolute;
+    top: 409px;
+    left: 68px;
+}
+
+
+@media screen and (max-width :375px){
+    .main-content{
+        flex-wrap: wrap;
+        min-width: 375px;
+        max-height: 789px;
+        background-color: hsl(0, 0%, 100%);
+        position: absolute;
+        border-radius: 0px;
+        padding: 10px;
+        top: 657px;
+    }
+    .lab-group{
+        margin-left: 87px;
+    }
+    .lab-group1{
+        margin-left: 87px;
+    }
+    .bill-input{
+        margin-left: 87px;
+        min-width: 309px;
+    }
+    .main-content-parameter-selector{
+       margin-left: 0px;
+       margin-right: 0px;
+       width: 471px;
+    }
+    .group-button{
+        margin-left: 87px;
+    }
+    .button-green{
+        min-width: 151px;
+    }
+    .button-custom{
+        min-width: 147px;
+        text-align: center;
+    }
+    .form{
+        margin-top: -5px;
+    }
+    .symboledollard{
+        top: 68px;
+        left: 131px;
+    }
+    .main-content-display-total{
+        height: 259px;
+        width: 353px;
+        margin-right: 0px;
+        margin-left: 91px;
+    }
+    .content-display-total{
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    .box-price{
+        margin-left: 41px;
+    }.box-tipAmount-price{
+        margin-bottom: 0px;
+    }
+    .button-reset{
+        margin-top: 0px;
+        margin-left: 8px;
+        width: 282px;
+        height: 51px;
+    }
+    .display-spliter{
+        top: -202px;
+        left: 50%;
+        transform: translate(0%, 50%);
+        position: absolute;
+    }
+    .symbolepeople{
+        position: absolute;
+        top: 457px;
+        left: 131px;
+    }
 }
