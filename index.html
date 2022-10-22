@@ -9,7 +9,7 @@
   <title>Tip calculator app</title>
 
 </head>
-<script src="script.js"></script>
+
 <body>
 
   <!-- Main content -->
@@ -22,14 +22,14 @@
 
     <!-- Left box in Main content form of parameter -->
     <div class="main-content-parameter-selector">
-      <form action="index.html" method="post" class="form" id="my-form">
+      <form action="index.html" method="post" class="form" id="myform">
         
         <div class="input-container">
           
           <div class="lab-group"><label for="bill-input">Bill</label></div>
           
           <div class="input-group">
-            <input type="text" id="bill-input1" placeholder="0" class="bill-input">
+            <input autocomplete="off" type="text" id="inputbill" placeholder="0" class="bill-input">
           </div>
 
           <div class="symboledollard"><img src="images/icon-dollar.svg" alt="$"></div>
@@ -39,26 +39,26 @@
         <div class="button-container">
           <div class="lab-group1">Select Tip %</div>
             <div class="group-button">
-              <input type="button" value="5%" class="button-green" >
-              <input type="button" value="10%" class="button-green" >
-              <input type="button" value="15%" class="button-green" >
-              <input type="button" value="25%" class="button-green" >
-              <input type="button" value="50%" class="button-green">
+              <input type="button" value="5%" class="button-green" id="btn5">
+              <input type="button" value="10%" class="button-green" id="btn10">
+              <input type="button" value="15%" class="button-green" id="btn15">
+              <input type="button" value="25%" class="button-green" id="btn25">
+              <input type="button" value="50%" class="button-green"id="btn50">
               <input type="text" placeholder="Custom" class="button-custom">
             </div>
         </div>
 
         <div class="input-container">
           
-          <div class="lab-group"><label for="numberofpeople-input">Number of People</label></div>
+          <div class="lab-group"><label for="numberofpeopleinput">Number of People</label></div>
           
           <div class="input-group">
-            <input type="text" id="numberofpeople-input" placeholder="0" class="bill-input">
+            <input type="text" id="numberofpeopleinput" placeholder="0" class="bill-input">
           </div>
 
           <div class="symbolepeople"><img src="images/icon-person.svg" alt="$"></div>
         </div>
-        <button class="button-reset" type="reset" id="btn-reset">Reset</button>
+        <button disabled="disabled" class="button-reset" type="reset" id="btnreset" >Reset</button>
       </form>
       
     </div>
@@ -105,6 +105,7 @@
 
   </main>
 
+  <script src="script.js"></script>
   
 <!-- 
   Bill
