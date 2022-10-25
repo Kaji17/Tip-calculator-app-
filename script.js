@@ -1,7 +1,10 @@
 const resetbutton = document.getElementById("btnreset");
 const input = document.getElementsByTagName('input');
 const form = document.getElementById('myform');
-
+var inputbill = document.getElementById('inputbill');
+var numberofpeopleinput = document.getElementById('numberofpeopleinput');
+var resultatTipamount = document.getElementById('resultatTipamount');
+var inputcustom= document.getElementById('inputcustom');
 // permi to disabled button reset if liste input bill empty
 for (let i = 0; i < input.length; i++) {
     const element = input[i];
