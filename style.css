@@ -155,7 +155,40 @@ body{
     background-color: hsl(172, 67%, 45%);
     color: hsl(183, 100%, 15%);
 }
-.button-custom{
+/* .button-custom{
+    max-width: 111px;
+    min-height: 49px;
+    margin-bottom: 17px;
+    text-align: right;
+    font-family: 'Space Mono', monospace;
+    color: hsl(183, 100%, 15%);
+    font-size: 24px;
+    background-color: hsl(189, 41%, 97%);
+    border-width: 0px;
+    font-weight: 700;
+} */
+/* .button-custom:hover{
+    background-color: hsl(189, 41%, 97%);
+} */
+/* .button-custom:focus{
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    border-width: 1px;
+    outline:1px solid hsl(172, 67%, 45%); 
+    border-radius: 5px;
+} */
+.symbolepeople{
+    position: absolute;
+    top: 409px;
+    left: 68px;
+}
+#error{
+    color: rgb(185, 46, 46);
+}
+#numberofpeopleinput{
+    border-radius: 5px;
+}
+#inputcustom{
     max-width: 111px;
     min-height: 49px;
     margin-bottom: 17px;
@@ -167,25 +200,14 @@ body{
     border-width: 0px;
     font-weight: 700;
 }
-.button-custom:hover{
+#inputcustom:hover{
     background-color: hsl(189, 41%, 97%);
 }
-.button-custom:focus{
+#inputcustom:focus{
     background-color: hsl(189, 41%, 97%);
     color: hsl(183, 100%, 15%);
     border-width: 1px;
     outline:1px solid hsl(172, 67%, 45%); /* style of border */
-    border-radius: 5px;
-}
-.symbolepeople{
-    position: absolute;
-    top: 409px;
-    left: 68px;
-}
-#error{
-    color: rgb(185, 46, 46);
-}
-#numberofpeopleinput{
     border-radius: 5px;
 }
 

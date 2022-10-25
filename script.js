@@ -45,13 +45,8 @@ for (let i = 0; i < input.length; i++) {
 }
 
 // recupere type of bill
-inputbill.addEventListener('change', () => {
+inputbill.addEventListener('keyup', () => {
     getTipValue(inputbill.value);
-})
-
-// recupere type of numberofpeopleinput
-numberofpeopleinput.addEventListener('change', () => {
-    getTipValue(numberofpeopleinput.value);
 })
 
 // recupere la valeur de chaque tip selectionner
@@ -61,6 +56,11 @@ selectTipTab.forEach(element => {
         getTipValue(currenttip);
     })
 });
+
+// recupere type of numberofpeopleinput
+numberofpeopleinput.addEventListener('keyup', () => {
+    getTipValue(numberofpeopleinput.value);
+})
 
 
 // function calculant Tip Amount /person
@@ -74,15 +74,15 @@ function calcTipAmount(bill, tip, nbrP) {
 
 // function calculant Total/person
 function calcTotal(bill, tip, nbrP) {
-    let value = (bill/nbrP)+ ((bill * tip) / 100)/nbrP;
+    let value = ((bill * tip)/ 100)/nbrP+(bill/nbrP) ;
     resultatTotalp.innerText= value.toFixed(2);
 }
 
 function getTipValue(tip) {
 
-    if (numberofpeopleinput.value !== "0" && numberofpeopleinput.value !== "" && tip !== undefined) {
-        calcTotal(inputbill.value, tip, numberofpeopleinput.value);
+    if (tip !== undefined && numberofpeopleinput.value !== "0" && numberofpeopleinput.value !== "" ) {
         calcTipAmount(inputbill.value, tip, numberofpeopleinput.value);
+        calcTotal(inputbill.value, tip, numberofpeopleinput.value);
     }
 }
 
