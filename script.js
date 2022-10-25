@@ -64,10 +64,13 @@ selectTipTab.forEach(element => {
 });
 
 
-
-
-function calcTipAmount(params) {
-
+// function calculant Tip Amount /person
+function calcTipAmount(bill, tip, nbrP) {
+   let billNumber = Number(bill);
+   let tipNumber= Number(tip);
+   let nbrPNumber= Number(nbrP);
+   let value = ((billNumber*tipNumber)/100)/nbrPNumber;
+   resultatTipamount.innerText= value;
 }
 
 // Ecouteur sur le btn reset pour renitialiser les champs
