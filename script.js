@@ -6,6 +6,7 @@ var numberofpeopleinput = document.getElementById('numberofpeopleinput');
 var resultatTipamount = document.getElementById('resultatTipamount');
 var inputcustom = document.getElementById('inputcustom');
 var selectTipTab = document.querySelectorAll('.button-green');
+var resultatTotalp= document.getElementById('resultatTotalp')
 let currenttip;
 
 // permi to disabled button reset if liste input bill empty
@@ -64,30 +65,30 @@ selectTipTab.forEach(element => {
 
 // function calculant Tip Amount /person
 function calcTipAmount(bill, tip, nbrP) {
-   let billNumber = Number(bill);
-   let tipNumber= Number(tip);
-   let nbrPNumber= Number(nbrP);
-   let value = ((billNumber*tipNumber)/100)/nbrPNumber;
-   resultatTipamount.innerText= value;
+    let billNumber = Number(bill);
+    let tipNumber = Number(tip);
+    let nbrPNumber = Number(nbrP);
+    let value = ((billNumber * tipNumber) / 100) / nbrPNumber;
+    resultatTipamount.innerText = value;
 }
 
 // Ecouteur sur le btn reset pour renitialiser les champs
 resetbutton.addEventListener('click', () => {
     if (inputbill.value !== '' && numberofpeopleinput.value !== '' &&
-        resultatTipamount.value !== '' && (inputcustom.value !== '' || currenttip!==undefined)) {
+        resultatTipamount.value !== '' && (inputcustom.value !== '' || currenttip !== undefined)) {
 
         inputbill.value = '';
         numberofpeopleinput.value = '';
         inputcustom.value = '';
         resultatTipamount.innerText = '0.00';
         resultatTotalp.innerText = '0.00';
-        document.getElementById('error').innerText= "";
+        document.getElementById('error').innerText = "";
 
-    }else if (numberofpeopleinput.value === '') {
-        document.getElementById('error').innerText= "Can't  be zero";
-        document.getElementById('numberofpeopleinput').style.outline='1px solid rgb(185, 46, 46)';
-        
-    }{
+    } else if (numberofpeopleinput.value === '') {
+        document.getElementById('error').innerText = "Can't  be zero";
+        document.getElementById('numberofpeopleinput').style.outline = '1px solid rgb(185, 46, 46)';
+
+    } {
 
     }
 })
