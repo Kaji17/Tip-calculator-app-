@@ -26,12 +26,12 @@ for (let i = 0; i < input.length; i++) {
         e.preventDefault();
         const value = e.currentTarget.value;
         if (value === '') {
-            document.getElementById("btnreset").style.backgroundColor="#0d686d";
+            resetbutton.style.backgroundColor = "#0d686d";
             resetbutton.setAttribute('disabled', 'disabled');
         } else {
             resetbutton.removeAttribute("disabled");
             console.log('remove');
-            document.getElementById("btnreset").style.backgroundColor="hsl(172, 67%, 45%)";
+            resetbutton.style.backgroundColor = "hsl(172, 67%, 45%)";
         }
 
     })
