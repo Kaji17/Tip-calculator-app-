@@ -19,6 +19,24 @@ for (let i = 0; i < input.length; i++) {
     })
 }
 
+for (let i = 0; i < input.length; i++) {
+    const element = fo[i];
+    // permi to disabled button reset if input bill empty
+    element.addEventListener("keyup", (e) => {
+        e.preventDefault();
+        const value = e.currentTarget.value;
+        if (value === '') {
+            resetbutton.setAttribute('disabled', 'disabled');
+        } else {
+            resetbutton.removeAttribute("disabled");
+            console.log('remove')
+        }
+
+    })
+}
+document.getElementById('resultatTipamount').innerHTML= 300;
+
+
 
 
 
