@@ -28,7 +28,9 @@
           
           <div class="lab-group"><label for="bill-input">Bill</label></div>
           <div class="input-group">
-            <input autocomplete="off" type="text" id="inputbill" placeholder="0" class="bill-input ">
+            <!-- oninput permit to avoid that the user isert !number -->
+            <input autocomplete="off" type="text" id="inputbill" placeholder="0" class="bill-input" 
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
           </div>
 
           <div class="symboledollard"><img src="images/icon-dollar.svg" alt="$"></div>
