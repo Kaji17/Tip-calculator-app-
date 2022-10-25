@@ -4,7 +4,10 @@ const form = document.getElementById('myform');
 var inputbill = document.getElementById('inputbill');
 var numberofpeopleinput = document.getElementById('numberofpeopleinput');
 var resultatTipamount = document.getElementById('resultatTipamount');
-var inputcustom= document.getElementById('inputcustom');
+var inputcustom = document.getElementById('inputcustom');
+var selectTipTab = document.querySelectorAll('.button-green');
+let currenttip;
+
 // permi to disabled button reset if liste input bill empty
 for (let i = 0; i < input.length; i++) {
     const element = input[i];
@@ -42,25 +45,51 @@ for (let i = 0; i < input.length; i++) {
 
 
 
-    // Ecouteur sur le btn reset pour renitialiser les champs
-if (
-    inputbill.value != '' && 
-    numberofpeopleinput.value != '' && 
-    resultatTipamount.value != '' && 
-    inputcustom.value != ''
-) {
-    resetbutton.addEventListener('click', clear)
+// recupere type of bill
+inputbill.addEventListener('change', () => {
+    // getTip(inputbill.value);
+})
+
+// recupere type of numberofpeopleinput
+numberofpeopleinput.addEventListener('change', () => {
+    // getTip(numberofpeopleinput.value);
+})
+
+// recupere la valeur de chaque tip selectionner
+selectTipTab.forEach(element => {
+    element.addEventListener('click', () => {
+        currenttip = element.value;
+        // getTip(currenttip);
+    })
+});
+
+
+
+
+function calcTipAmount(params) {
+
 }
 
-//function servant à rénitialiser les champs
-function clear() {
-    inputbill.value = '';
-    numberofpeopleinput.value = '';
-    inputcustom.value = '';
-    resultatTipamount.innerText = '0.00';
-    resultatTotalp.innerText = '0.00';
-}
+// Ecouteur sur le btn reset pour renitialiser les champs
+resetbutton.addEventListener('click', () => {
+    if (inputbill.value !== '' && numberofpeopleinput.value !== '' &&
+        resultatTipamount.value !== '' && (inputcustom.value !== '' || currenttip!==undefined)) {
 
+        inputbill.value = '';
+        numberofpeopleinput.value = '';
+        inputcustom.value = '';
+        resultatTipamount.innerText = '0.00';
+        resultatTotalp.innerText = '0.00';
+        document.getElementById('error').innerText= "";
+
+    }else if (numberofpeopleinput.value === '') {
+        document.getElementById('error').innerText= "Can't  be zero";
+        document.getElementById('numberofpeopleinput').style.outline='1px solid rgb(185, 46, 46)';
+        
+    }{
+
+    }
+})
 
 
 
