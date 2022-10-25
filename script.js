@@ -69,7 +69,13 @@ function calcTipAmount(bill, tip, nbrP) {
     let tipNumber = Number(tip);
     let nbrPNumber = Number(nbrP);
     let value = ((billNumber * tipNumber) / 100) / nbrPNumber;
-    resultatTipamount.innerText = value;
+    resultatTipamount.innerText = value.toFixed(2);
+}
+
+// function calculant Total/person
+function calcTotal(bill, tip, nbrP) {
+    let value = (bill/nbrP)+ ((bill * tip) / 100)/nbrP;
+    resultatTotalp.innerText= value.toFixed(2);
 }
 
 // Ecouteur sur le btn reset pour renitialiser les champs
