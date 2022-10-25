@@ -43,8 +43,6 @@ for (let i = 0; i < input.length; i++) {
     })
 }
 
-
-
 // recupere type of bill
 inputbill.addEventListener('change', () => {
     // getTip(inputbill.value);
