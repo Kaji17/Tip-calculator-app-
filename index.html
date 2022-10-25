@@ -53,9 +53,12 @@
 
         <div class="input-container">
           
-          <div class="lab-group"><label for="numberofpeopleinput">Number of People</label></div>
+          <div class="lab-group">
+            <label for="numberofpeopleinput">Number of People</label>
+            <div id="error"></div>
+          </div>
           
-          <div class="input-group">
+          <div class="input-group" >
             <input autocomplete="off" type="text" id="numberofpeopleinput" placeholder="0" class="bill-input"
             oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
           </div>
