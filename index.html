@@ -40,12 +40,13 @@
         <div class="button-container">
           <div class="lab-group1">Select Tip %</div>
             <div class="group-button">
-              <input type="button" value="5%" class="button-green" id="btn5">
-              <input type="button" value="10%" class="button-green" id="btn10">
-              <input type="button" value="15%" class="button-green" id="btn15">
-              <input type="button" value="25%" class="button-green" id="btn25">
-              <input type="button" value="50%" class="button-green"id="btn50">
-              <input type="text" placeholder="Custom" class="button-custom">
+              <button class="button-green" id="btn5" value="5">5%</button>
+              <button class="button-green" id="btn10" value="10">10%</button>
+              <button class="button-green" id="btn15" value="15">15%</button>
+              <button class="button-green" id="btn25" value="25">25%</button>
+              <button class="button-green" id="btn50" value="50">50%</button>
+              <input type="text" placeholder="Custom" class="button-custom"
+              oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
             </div>
             
         </div>
