@@ -30,7 +30,8 @@ for (let i = 0; i < input.length; i++) {
         } else {
             resetbutton.removeAttribute("disabled");
             console.log('remove')
-        }
+            console.log('remove');
+            document.getElementById("btnreset").style.backgroundColor="hsl(172, 67%, 45%)";
 
     })
 }
