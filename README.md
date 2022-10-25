@@ -40,6 +40,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- Javascript
 ### What I learned
 
 I learned with this challenge how to interact with DOM elements (retrieve data-process them-display them in the DOM)
