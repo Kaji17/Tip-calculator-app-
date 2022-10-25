@@ -36,7 +36,27 @@ for (let i = 0; i < input.length; i++) {
 
     })
 }
-document.getElementById('resultatTipamount').innerHTML= 300;
+
+
+
+    // Ecouteur sur le btn reset pour renitialiser les champs
+if (
+    inputbill.value != '' && 
+    numberofpeopleinput.value != '' && 
+    resultatTipamount.value != '' && 
+    inputcustom.value != ''
+) {
+    resetbutton.addEventListener('click', clear)
+}
+
+//function servant à rénitialiser les champs
+function clear() {
+    inputbill.value = '';
+    numberofpeopleinput.value = '';
+    inputcustom.value = '';
+    resultatTipamount.innerText = '0.00';
+    resultatTotalp.innerText = '0.00';
+}
 
 
 
