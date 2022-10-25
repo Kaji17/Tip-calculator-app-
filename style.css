@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Space+Mono:wght@700&display=swap');
 
+
 .attribution {
     font-size: 11px; text-align: center;
 }
@@ -65,13 +66,20 @@ body{
 }
 .button-reset{
     text-align: center;
-    background-color: #0d686d;
     width: 319px;
     height: 52px;
     margin-top: 86px;
     position: absolute;
     left: 547px;
     bottom: 53px;
+    border-width: 0px;
+}
+.button-reset:hover{
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+#btnreset{
+    background-color: #0d686d;
 }
 .bill-input{
     text-align: right;
@@ -84,7 +92,7 @@ body{
     font-weight: 700;
     padding-right: 19px;
 }
-form{
+.form{
     margin-left: 23px;
     margin-top: 23px;
     margin-bottom: 23px;
@@ -138,7 +146,12 @@ form{
     border-radius: 5px;
 }
 .group-button :hover{
-    background-color: hsl(183, 69%, 27%);
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+.group-button :focus{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
 }
 .button-custom{
     max-width: 111px;
