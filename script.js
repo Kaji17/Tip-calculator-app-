@@ -57,6 +57,11 @@ selectTipTab.forEach(element => {
     })
 });
 
+inputcustom.addEventListener('input', ()=>{
+    currenttip = inputcustom.value;
+    getTipValue(currenttip);
+})
+
 // recupere type of numberofpeopleinput
 numberofpeopleinput.addEventListener('input', () => {
     getTipValue(numberofpeopleinput.value);
