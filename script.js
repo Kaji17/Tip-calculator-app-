@@ -7,7 +7,7 @@ var resultatTipamount = document.getElementById('resultatTipamount');
 var inputcustom = document.getElementById('inputcustom');
 var selectTipTab = document.querySelectorAll('.button-green');
 var resultatTotalp= document.getElementById('resultatTotalp')
-let currenttip;
+currenttip = 0;
 
 // permi to disabled button reset if liste input bill empty
 for (let i = 0; i < input.length; i++) {
@@ -58,7 +58,7 @@ selectTipTab.forEach(element => {
 });
 
 // recupere type of numberofpeopleinput
-numberofpeopleinput.addEventListener('keyup', () => {
+numberofpeopleinput.addEventListener('input', () => {
     getTipValue(numberofpeopleinput.value);
 })
 
