@@ -90,7 +90,6 @@ function getTipValue(tip) {
 resetbutton.addEventListener('click', () => {
     if (inputbill.value !== '' && numberofpeopleinput.value !== '' &&
         resultatTipamount.value !== '' && (inputcustom.value !== '' || currenttip !== undefined)) {
-
         inputbill.value = '';
         numberofpeopleinput.value = '';
         inputcustom.value = '';
