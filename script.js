@@ -52,8 +52,10 @@ inputbill.addEventListener('keyup', () => {
 // recupere la valeur de chaque tip selectionner
 selectTipTab.forEach(element => {
     element.addEventListener('click', () => {
+        unFocusButton();
         currenttip = element.value;
         getTipValue(currenttip);
+        element.classList.add('btn-active');
     })
 });
 
@@ -89,6 +91,11 @@ function getTipValue(tip) {
         calcTipAmount(inputbill.value, currenttip, numberofpeopleinput.value);
         calcTotal(inputbill.value, currenttip, numberofpeopleinput.value);
     }
+}
+function unFocusButton(){
+    selectTipTab.forEach(element => {
+        element.classList.remove('btn-active')
+    });
 }
 
 // Ecouteur sur le btn reset pour renitialiser les champs
