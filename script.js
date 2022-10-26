@@ -81,8 +81,8 @@ function calcTotal(bill, tip, nbrP) {
 function getTipValue(tip) {
 
     if (tip !== undefined && numberofpeopleinput.value !== "0" && numberofpeopleinput.value !== "" ) {
-        calcTipAmount(inputbill.value, tip, numberofpeopleinput.value);
-        calcTotal(inputbill.value, tip, numberofpeopleinput.value);
+        calcTipAmount(inputbill.value, currenttip, numberofpeopleinput.value);
+        calcTotal(inputbill.value, currenttip, numberofpeopleinput.value);
     }
 }
 
