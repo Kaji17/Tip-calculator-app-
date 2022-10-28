@@ -108,7 +108,7 @@ resetbutton.addEventListener('click', () => {
         resultatTipamount.innerText = '0.00';
         resultatTotalp.innerText = '0.00';
         document.getElementById('error').innerText = "";
-
+        
     } else if (numberofpeopleinput.value === '') {
         document.getElementById('error').innerText = "Can't  be zero";
         document.getElementById('numberofpeopleinput').style.outline = '1px solid rgb(185, 46, 46)';
